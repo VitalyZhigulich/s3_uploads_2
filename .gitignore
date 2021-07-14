@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore ENV variables for docker
+.env
+
 # Ignore IDE
 /.idea
 /*.sublime-project
