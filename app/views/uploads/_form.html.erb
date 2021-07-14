@@ -1,0 +1,12 @@
+<% form_container_id = "upload-form-container-#{SecureRandom.hex}" %>
+
+<div id="<%= form_container_id %>">
+  <%= form_with url: uploads_path, method: :post, local: false do |form| %>
+    <%= form.hidden_field :form_container_id, value: form_container_id %>
+
+    <%= form.label :files %>
+    <%= form.file_field :files, multiple: true %>
+
+    <%= form.submit %>
+  <% end %>
+</div>
