@@ -1,0 +1,5 @@
+<% if @upload_result.success %>
+  <%= link_to @upload_result.file.original_filename, @upload_result.remote_url, target: :blank %>
+<% else %>
+  Error: <%= @upload_result.message %>
+<% end %>
