@@ -2,6 +2,6 @@
 
 class UploadsController < ApplicationController
   def create
-    @upload_result = AwsS3Uploader.call(params[:file])
+    @uploads_result = AwsS3Uploader.call(params[:files])
   end
 end

@@ -1,5 +1,3 @@
 container = document.getElementById("uploads-container");
-form = document.createElement("div");
 
-form.innerHTML = "<%=j render 'form' %>";
-container.appendChild(form);
+container.insertAdjacentHTML('beforeend', "<%=j render 'form' %>");

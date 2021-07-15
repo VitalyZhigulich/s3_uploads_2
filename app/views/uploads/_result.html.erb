@@ -1,5 +1,9 @@
-<% if @upload_result.success %>
-  <%= link_to @upload_result.file.original_filename, @upload_result.remote_url, target: :blank %>
-<% else %>
-  Error: <%= @upload_result.message %>
+<% @uploads_result.each do |upload_result| %>
+  <div>
+    <% if upload_result.success %>
+      <%= link_to upload_result.file.original_filename, upload_result.remote_url, target: :blank %>
+    <% else %>
+      <%= upload_result.file.original_filename %> Error: <%= upload_result.message %>
+    <% end %>
+  </div>
 <% end %>

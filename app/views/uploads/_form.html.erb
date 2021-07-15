@@ -4,8 +4,8 @@
   <%= form_with url: uploads_path, method: :post, local: false do |form| %>
     <%= form.hidden_field :upload_container_id, value: upload_container_id %>
 
-    <%= form.label :file %>
-    <%= form.file_field :file %>
+    <%= form.label :files %>
+    <%= form.file_field :files, multiple: true, required: true %>
 
     <%= form.submit %>
   <% end %>
