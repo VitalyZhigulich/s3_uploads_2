@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please create a .env file with the next variables:
 
-Things you may want to cover:
+* AWS_ACCESS_KEY_ID
 
-* Ruby version
+* AWS_SECRET_ACCESS_KEY
 
-* System dependencies
+* AWS_REGION
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* AWS_S3_BUCKET_NAME
