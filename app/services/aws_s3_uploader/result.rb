@@ -9,7 +9,7 @@ class AwsS3Uploader::Result
     end
 
     def failure(file:, message:)
-      Container.new(false, file, nil, message.to_s)
+      Container.new(false, file, nil, message)
     end
   end
 end
