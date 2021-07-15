@@ -79,7 +79,6 @@ GEM
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.2.4)
       aws-eventstream (~> 1, >= 1.0.2)
-    bindex (0.8.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
     builder (3.2.4)
@@ -93,8 +92,6 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.11.2)
-      activesupport (>= 5.0.0)
     jmespath (1.4.0)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -110,7 +107,7 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.7-x86_64-darwin)
+    nokogiri (1.11.7-x86_64-linux)
       racc (~> 1.4)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -121,8 +118,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-mini-profiler (2.3.2)
-      rack (>= 1.2.0)
     rack-proxy (0.7.0)
       rack
     rack-test (1.1.0)
@@ -200,11 +195,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    web-console (4.1.0)
-      actionview (>= 6.0.0)
-      activemodel (>= 6.0.0)
-      bindex (>= 0.4.0)
-      railties (>= 6.0.0)
     webpacker (5.4.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
@@ -217,23 +207,20 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk-ec2 (~> 1)
   aws-sdk-s3 (~> 1)
   bootsnap (>= 1.4.4)
-  jbuilder (~> 2.7)
   listen (~> 3.3)
-  pry-rails
+  pry-rails (~> 0.3)
   puma (~> 5.0)
-  rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)
-  rspec-rails
+  rspec-rails (~> 5.0)
   sass-rails (>= 6)
-  spring
+  spring (~> 2.1)
   turbolinks (~> 5)
-  tzinfo-data
-  web-console (>= 4.1.0)
   webpacker (~> 5.0)
 
 RUBY VERSION
